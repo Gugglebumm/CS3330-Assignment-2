@@ -10,6 +10,7 @@ public class MiddleEarthMain {
 
 	public static void main(String[] args) {
 		
+		/*
 		Elf elf = new Elf("Stewart", 50.0, 10.0);
 		Dwarf dwarf = new Dwarf("Timothy", 80.0, 15.0);
 		Human human = new Human("Rodrick", 60.0, 12.0);
@@ -45,7 +46,10 @@ public class MiddleEarthMain {
 			System.out.println("Orc Attack Hit");
 		}//end if
 		System.out.println("Dwarf Health: " + dwarf.getHealth());
-
+		*/ //Parker's Testing Code
+		
+		Menu menu = new Menu();
+        menu.showMenu();
 
 	}//end main
 
