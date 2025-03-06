@@ -13,11 +13,14 @@ import java.util.Scanner;
 public class Menu {
 
     private CharacterManager characterManager;
-
+  
     public Menu() {
         characterManager = new CharacterManager();
     }
-
+    /*
+     * Display menu
+     * Handle user inputs and check for invalid inputs
+     */
     public void showMenu() {
         Scanner scanner = new Scanner(System.in);
         int choice = -1;  // Initial invalid choice to enter the loop
@@ -65,7 +68,11 @@ public class Menu {
     }
 
 
-    // Method to add a new character
+    /*
+     * Add a character that contains health, power and character type
+     * Includes parameter checks for invalid inputs
+     * @param scanner Scanner object for user inputs
+     */
     private void addCharacter(Scanner scanner) {
         System.out.print("Enter character name: ");
         scanner.nextLine();  // Consume the leftover newline character after nextInt() or nextDouble()
@@ -128,7 +135,10 @@ public class Menu {
         System.out.println("Character added successfully!");
     }
 
- // Method to update a character
+    /*
+     * Update characters health,power or both via user input
+     * @param scanner Scanner object for user input
+     */
     private void updateCharacter(Scanner scanner) {
         System.out.println("Enter character name to update: ");
         scanner.nextLine(); // Consume the newline character left by nextInt() in showMenu()
@@ -171,7 +181,10 @@ public class Menu {
     }
 
 
-    // Method to delete a character
+    /*
+     * Delete a selected character from the system via input
+     * @param scanner Scanner object for user inputs
+     */
     private void deleteCharacter(Scanner scanner) {
         System.out.print("Enter character name to delete: ");
         scanner.nextLine();  // Consume any leftover newline from previous input
@@ -181,12 +194,17 @@ public class Menu {
         characterManager.deleteCharacter(name);  // This will directly call the deleteCharacter method with exact matching
     }
 
-    // Method to display all characters
+    /*
+     * Display all characters in the system
+     */
     private void displayAllCharacters() {
         characterManager.displayAllCharacters(); // Call the display function from CharacterManager
     }
 
-    // Fight Simulation method
+    /*
+     * Simulate a fight between two characters and are chosen via user input
+     * @param scanner Scanner object for user input
+     */
     private void fight(Scanner scanner) {
         System.out.println("Choose two characters to fight!");
         System.out.print("Enter the name of the first character: ");

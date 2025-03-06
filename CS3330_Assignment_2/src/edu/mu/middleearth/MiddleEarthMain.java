@@ -7,7 +7,10 @@ import edu.mu.middleearth.character.Orc;
 import edu.mu.middleearth.character.Wizard;
 
 public class MiddleEarthMain {
-
+	/*
+	 * Main starts by displaying menu for character manager
+	 * @param args - command line arguments
+	 */
 	public static void main(String[] args) {
 		
 		/*
