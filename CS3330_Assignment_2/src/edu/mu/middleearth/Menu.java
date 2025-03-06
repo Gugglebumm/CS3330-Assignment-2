@@ -9,17 +9,23 @@ import edu.mu.middleearth.character.Orc;
 import edu.mu.middleearth.character.Wizard;
 
 import java.util.Scanner;
-
+/*
+ * Used to give the menu for managing characters so that
+ * they can be added, updated, deleted, displayed and to simulate a fight
+ */
 public class Menu {
 
     private CharacterManager characterManager;
-  
+    /*
+     * Constructor to initialize CharacterManager
+     */
     public Menu() {
         characterManager = new CharacterManager();
     }
     /*
      * Display menu
-     * Handle user inputs and check for invalid inputs
+     * Take care of user inputs 
+     * check for invalid inputs
      */
     public void showMenu() {
         Scanner scanner = new Scanner(System.in);
@@ -182,7 +188,7 @@ public class Menu {
 
 
     /*
-     * Delete a selected character from the system via input
+     * Delete a selected character from the system via user input
      * @param scanner Scanner object for user inputs
      */
     private void deleteCharacter(Scanner scanner) {

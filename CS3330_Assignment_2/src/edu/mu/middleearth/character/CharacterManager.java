@@ -1,11 +1,15 @@
 package edu.mu.middleearth.character;
-
+/*
+ * Used to manage middle earth characters such as
+ * add, get, update, display, and delete characters
+ */
 public class CharacterManager {
 	
 	private MiddleEarthCharacter[] characters;
     private int size;
     /*
-     * constructor for initializing character array
+     * Constructor for initializing character array with
+     * an initial capacity of 5
      */
     public CharacterManager() {
         characters = new MiddleEarthCharacter[5]; // Initial capacity
@@ -26,7 +30,7 @@ public class CharacterManager {
     }
 
     /*
-     * Retrieves a character by name.
+     * Gets a character by name.
      * @param name is the name of character to get
      * @return if found Null if not
      */
@@ -40,7 +44,7 @@ public class CharacterManager {
     }
 
     /*
-     * Updates a character's health and power by name.
+     * Updates a character's health and power via name.
      * @param name the name of character to be updated
      * @param health the new health for the character
      * @param power the new power for the character

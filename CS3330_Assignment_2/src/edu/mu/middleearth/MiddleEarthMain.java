@@ -5,7 +5,9 @@ import edu.mu.middleearth.character.Elf;
 import edu.mu.middleearth.character.Human;
 import edu.mu.middleearth.character.Orc;
 import edu.mu.middleearth.character.Wizard;
-
+/*
+ * Initialize menu and starts application
+ */
 public class MiddleEarthMain {
 	/*
 	 * Main starts by displaying menu for character manager
